@@ -1,0 +1,30 @@
+* {
+  font-family: "Montserrat";
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1240px;
+}
+.nav {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  font-weight: 600;
+}
+.lmj-logo {
+  height: 40px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover {
+  color: rgba(255, 96, 96, 1);
+}
+.nav a:active {
+  text-decoration: underline;
+  color: rgba(255, 96, 96, 1);
+}

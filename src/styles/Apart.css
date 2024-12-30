@@ -1,0 +1,152 @@
+* {
+  font-family: "Montserrat", sans serif;
+}
+.apart {
+  padding-bottom: 20px;
+  max-width: 1240px;
+  padding-left: 10px;
+}
+.lmj-apart {
+  object-fit: cover;
+  max-width: 100%;
+  margin-top: 20px;
+
+  width: 100%;
+  border-radius: 25px;
+  position: relative;
+}
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: 415px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.apart-title {
+  margin-bottom: 0;
+  color: rgba(255, 96, 96, 1);
+}
+.apart-subtitle {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.confort-text {
+  display: flex;
+  gap: 10px;
+}
+.confort-text p {
+  background-color: rgba(255, 96, 96, 1);
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.apart-conteneur {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.apart-name {
+  display: flex;
+  align-content: flex-end;
+  margin-right: 0;
+  padding-right: 0;
+}
+.apart-name h3 {
+  color: rgba(255, 96, 96, 1);
+}
+.align-custom {
+  text-align: left; /* Garde "Alexandre" aligné à gauche */
+}
+
+.align-right {
+  display: inline-block; /* Permet de contrôler le positionnement */
+  margin-left: auto; /* Pousse "..Dumas" à droite */
+  padding-left: 30px; /* Ajuste l'espacement selon vos besoins */
+}
+.host-picture {
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.badge {
+  height: 64px;
+  width: 64px;
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 0;
+  padding-right: 0;
+}
+.rating {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 0;
+  padding-right: 0;
+  place-self: flex-end;
+  gap: 20px;
+}
+.rating i {
+  color: rgb(218, 200, 200);
+}
+.apart-detail {
+  padding-right: 10px;
+}
+
+@media screen and (width <= 768px) {
+  .apart-conteneur {
+    flex-direction: column;
+  }
+  .apart-detail {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rating i {
+    align-self: center;
+  }
+  .rating {
+    padding-bottom: 20px;
+  }
+}

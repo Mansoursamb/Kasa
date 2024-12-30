@@ -1,0 +1,32 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  max-width: 1240px;
+}
+.Card {
+  height: 340px;
+  max-width: 340px;
+  background: rgba(255, 96, 96, 1);
+  border-radius: 10px;
+}
+.card-titre {
+  padding-left: 10px;
+  color: white;
+  padding-top: 270px;
+}
+.card-container a {
+  text-decoration: none;
+  list-style-type: none;
+}
+@media screen and (width <= 768px) {
+  .Card {
+    max-width: 100%;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

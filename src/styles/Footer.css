@@ -1,0 +1,21 @@
+.bottom-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  max-width: 100%;
+  height: 150px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.lmjo-logo {
+  width: 100px;
+  margin-top: 50px;
+}
+.copy {
+  color: white;
+  margin-top: 30px;
+}
