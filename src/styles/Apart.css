@@ -71,8 +71,8 @@
 .confort-text p {
   background-color: rgba(255, 96, 96, 1);
   border-radius: 5px;
-  width: 100px;
-  height: 25px;
+  width: 27%;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
