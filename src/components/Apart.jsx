@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/Apart.css";
 import works from "../assets/data.json";
-import Header from "./Header";
-import Footer from "./Footer";
 
 function Apart() {
   const { id } = useParams(); // Récupère l'ID depuis l'URL
@@ -27,7 +25,6 @@ function Apart() {
 
   return (
     <div>
-      <Header />
       <div className="apart" key={selectedWork.id}>
         <div className="carousel">
           <button className="carousel-button left" onClick={goToPrevious}>
@@ -74,7 +71,6 @@ function Apart() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

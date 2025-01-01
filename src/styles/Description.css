@@ -54,6 +54,45 @@
   color: #555;
   line-height: 1.5;
 }
+/* Container for the two descriptions */
+.look {
+  display: flex; /* Active le mode flexbox */
+  justify-content: space-between; /* Sépare les composants horizontalement */
+  align-items: flex-start; /* Aligne les éléments en haut */
+  gap: 20px; /* Espace entre les deux composants */
+}
+
+.look .desc {
+  flex: 1; /* Les deux composants prennent une largeur égale */
+  max-width: 48%; /* Chaque composant occupe environ la moitié de la largeur */
+
+  padding-left: 15px; /* Ajoutez de l'espace interne */
+  padding-right: 15px; /* Ajoutez de l'espace interne */
+
+  border-radius: 8px; /* Bordures arrondies */
+}
+@media (max-width: 768px) {
+  .look {
+    flex-direction: column; /* Empile les composants verticalement */
+    gap: 10px; /* Réduit l'espace entre les composants */
+  }
+
+  .look .desc {
+    max-width: 100%;
+    width: 90%; /* Chaque composant occupe toute la largeur */
+  }
+}
+.look {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 10px;
+}
 
 @media screen and (max-width: 875px) {
   .desc {
