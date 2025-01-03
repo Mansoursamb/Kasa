@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import Accueil from "./pages/Accueil";
+
 import Apropos from "./pages/Apropos";
 import Error from "./components/Error";
 import Gallery from "./pages/Gallery";
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Gallery />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="*" element={<Error />} />
         <Route path="/gallery" element={<Gallery />} />

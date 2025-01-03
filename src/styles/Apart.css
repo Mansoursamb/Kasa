@@ -55,7 +55,14 @@
 .carousel-button:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-
+.counter {
+  position: absolute;
+  top: 12em;
+  color: rgba(255, 96, 96, 1);
+  font-size: xx-large;
+  font-weight: 800;
+  right: 50%;
+}
 .apart-title {
   margin-bottom: 0;
   color: rgba(255, 96, 96, 1);

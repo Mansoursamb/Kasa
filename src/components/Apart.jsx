@@ -2,15 +2,22 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/Apart.css";
 import works from "../assets/data.json";
+import Rating from "./Rating";
 
 function Apart() {
   const { id } = useParams(); // Récupère l'ID depuis l'URL
   const selectedWork = works.find((work) => work.id === id);
 
+  // État pour suivre l'image courante
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  if (!selectedWork) {
+    return <div>Logement introuvable</div>;
+  }
 
   const pictures = selectedWork.pictures;
 
+  // Gestion des flèches
   const goToPrevious = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
@@ -26,19 +33,28 @@ function Apart() {
   return (
     <div>
       <div className="apart" key={selectedWork.id}>
+        {/* Carousel */}
         <div className="carousel">
           <button className="carousel-button left" onClick={goToPrevious}>
             <i className="fa-solid fa-chevron-left"></i>
           </button>
           <img
             src={pictures[currentImageIndex]}
-            alt={`Apart ${currentImageIndex + 1}`}
+            alt={selectedWork.title}
             className="lmj-apart"
           />
+
           <button className="carousel-button right" onClick={goToNext}>
             <i className="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+
+        {/* Compteur dynamique */}
+        <p className="counter">
+          {currentImageIndex + 1}/{pictures.length}
+        </p>
+
+        {/* Contenu principal */}
         <div className="apart-conteneur">
           <div className="apart-container">
             <h1 className="apart-title">{selectedWork.title}</h1>
@@ -46,7 +62,9 @@ function Apart() {
             <p className="apart-description">{selectedWork.description}</p>
             <div className="confort-text">
               {selectedWork.tags.map((tag, index) => (
-                <p key={index}>{tag}</p>
+                <p key={index} className="tag">
+                  {tag}
+                </p>
               ))}
             </div>
           </div>
@@ -59,15 +77,7 @@ function Apart() {
                 className="host-picture"
               />
             </div>
-            <div className="rating">
-              {Array.from({ length: Number(selectedWork.rating) }).map(
-                (_, index) => (
-                  <span key={index}>
-                    <i className="fa-solid fa-star"></i>
-                  </span>
-                )
-              )}
-            </div>
+            <Rating rating={selectedWork.rating} />
           </div>
         </div>
       </div>
