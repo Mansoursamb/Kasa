@@ -84,6 +84,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  text-wrap: nowrap;
 }
 .apart-conteneur {
   display: flex;
