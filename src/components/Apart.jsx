@@ -50,9 +50,9 @@ function Apart() {
         </div>
 
         {/* Compteur dynamique */}
-        <p className="counter">
+        <div className="counter">
           {currentImageIndex + 1}/{pictures.length}
-        </p>
+        </div>
 
         {/* Contenu principal */}
         <div className="apart-conteneur">
