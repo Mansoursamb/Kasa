@@ -34,10 +34,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+
   border: none;
   color: white;
-  font-size: 24px;
+  font-size: 50px;
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
@@ -79,12 +79,12 @@
   background-color: rgba(255, 96, 96, 1);
   border-radius: 5px;
   width: 27%;
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 .apart-conteneur {
   display: flex;
@@ -115,6 +115,7 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 64px;
 }
 .badge {
   height: 64px;
@@ -132,7 +133,7 @@
   margin-right: 0;
   padding-right: 0;
   place-self: flex-end;
-  gap: 20px;
+  gap: 12px;
 }
 .rating i {
   color: rgb(218, 200, 200);

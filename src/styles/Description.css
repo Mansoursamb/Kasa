@@ -1,7 +1,7 @@
 .desc {
   max-width: 1240px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 15px;
 
   border-radius: 10px;
 
@@ -15,11 +15,12 @@
   cursor: pointer;
   background: rgba(255, 96, 96, 1);
   max-width: 1240px;
+
   margin-left: 20px auto;
   margin-right: 20px auto;
   padding-right: 20px;
   padding-left: 20px;
-
+  height: 50px;
   border-radius: 10px;
 }
 
@@ -41,6 +42,7 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  margin: 0;
 }
 
 .descriptif.visible {
@@ -97,6 +99,8 @@
 @media screen and (max-width: 875px) {
   .desc {
     max-width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .description {
     max-width: 90%;
