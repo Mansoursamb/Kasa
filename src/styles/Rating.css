@@ -5,3 +5,6 @@
 .gray-star {
   color: gray !important;
 }
+.rating {
+  max-width: 100%;
+}

@@ -70,7 +70,9 @@ function Apart() {
           </div>
           <div className="apart-detail">
             <div className="apart-name">
-              <h3 className="align-custom">{selectedWork.host.name}</h3>
+              <h3 className="align-custom">
+                {selectedWork.host.name.replace(" ", "\n")}
+              </h3>
               <img
                 src={selectedWork.host.picture}
                 alt={selectedWork.host.name}

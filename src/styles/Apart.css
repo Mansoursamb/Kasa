@@ -73,7 +73,7 @@
 .confort-text {
   display: flex;
   gap: 10px;
-  padding: 10px;
+
   max-width: 100%;
 }
 .confort-text p {
@@ -106,23 +106,25 @@
 }
 .apart-name h3 {
   color: rgba(255, 96, 96, 1);
-}
-.align-custom {
-  text-align: right;
-  margin-top: 5px; /* Garde "Alexandre" aligné à gauche */
+  white-space: pre-wrap; /* Permet de forcer le retour à la ligne */
+  text-align: right; /* Aligne le texte à droite */
+  margin: 0; /* Supprime les marges par défaut */
 }
 
-.align-right {
+.align-custom {
+  text-align: right;
+  margin-top: 70px;
   display: inline-block; /* Permet de contrôler le positionnement */
-  margin-left: auto; /* Pousse "..Dumas" à droite */
-  padding-left: 0px; /* Ajuste l'espacement selon vos besoins */
+  margin-right: auto; /* Pousse "..Dumas" à droite */
+  padding-left: 0px;
 }
+
 .host-picture {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 64px;
-  margin-top: 25px;
+  margin-top: 13px;
 }
 .badge {
   height: 64px;
@@ -159,6 +161,13 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+  }
+  .confort-text p {
+    padding: 4px;
+    text-wrap: wrap;
+  }
+  .confort-text {
+    flex-wrap: wrap;
   }
   .rating i {
     align-self: center;
