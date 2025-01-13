@@ -33,11 +33,16 @@
     128,
     0.356
   ); /* Fond semi-transparent pour lisibilité */
-  color: rgba(255, 96, 96, 1);
+  color: white;
   font-size: 1rem;
   border-radius: 4px;
 }
 
 .galerie-item:hover {
   transform: scale(1.05);
+}
+@media screen and (width <= 768px) {
+  .galerie {
+    grid-template-columns: 1fr;
+  }
 }

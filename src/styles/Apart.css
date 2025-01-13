@@ -51,9 +51,9 @@
 }
 .counter {
   position: absolute;
-  top: 13em;
+  bottom: -30px;
   color: white;
-  font-size: xx-large;
+  font-size: large;
   right: 50%;
 }
 .apart-container {
@@ -78,16 +78,17 @@
 }
 .confort-text p {
   background-color: rgba(255, 96, 96, 1);
-  border-radius: 5px;
-  width: 27%;
-  height: 35px;
+  border-radius: 10px;
+  max-width: 40%;
+  max-height: 35px;
+  min-height: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-wrap: wrap;
   line-height: 1;
-  max-width: 100%;
 }
 .apart-conteneur {
   display: flex;

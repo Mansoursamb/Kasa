@@ -2,7 +2,7 @@
   font-family: "Montserrat" sans-serif;
 }
 .lmj-hero {
-  height: 150px;
+  height: 230px;
   width: 100%;
   object-fit: cover;
   place-self: center;
@@ -26,4 +26,14 @@
   color: white;
   text-wrap: wrap;
   padding: 20px;
+}
+@media screen and (width <= 768px) {
+  .Titre {
+    left: 1em;
+    font-size: 1.5em;
+    top: 30px;
+  }
+  .lmj-hero {
+    height: 150px;
+  }
 }
