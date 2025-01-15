@@ -19,7 +19,7 @@ function Description({ titre, text }) {
         )}
       </div>
       <div className={`descriptif ${isExpanded ? "visible" : ""}`}>
-        <p className="text">{text}</p>
+        <div> className="text"{text}</div>
       </div>
     </div>
   );
